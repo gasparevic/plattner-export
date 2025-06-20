@@ -1,1 +1,9 @@
+services:
+  - type: web
+    name: motoroom-plattner
+    env: python
+    buildCommand: ""
+    startCommand: python plattner_export.py
+    plan: free
+    autoDeploy: false
 
