@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def download_xml():
-    url = "https://b2b.plattner.rs:44366/export/xml"  # <-- stavi pravu URL adresu
+    url = "http://b2b.plattner.rs:44366/export/xml"  # <-- stavi pravu URL adresu
     try:
         r = requests.get(url)
         r.raise_for_status()
